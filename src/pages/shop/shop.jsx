@@ -10,7 +10,7 @@ export const Shop = () => {
             <h1>Shopping App</h1>
         </div>
         <div className="products">{PRODUCTS.map((product)=>(
-            <Product data={product}/>
+            <Product key={product.id} data={product}/>
         ))}</div>
     </div>
   )
